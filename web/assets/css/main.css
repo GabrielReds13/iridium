@@ -1,0 +1,7 @@
+/* import */
+@import url('font.css');
+@import url('palette.css');
+
+* {
+    overflow: hidden;
+}
