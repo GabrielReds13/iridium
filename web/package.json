@@ -2,6 +2,9 @@
   "name": "nuxt-app",
   "private": true,
   "type": "module",
+  "resolutions": {
+    "rollup": "npm:@rollup/wasm-node"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
