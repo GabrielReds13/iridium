@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center gap-4 p-4 w-full h-full">
+  <div class="flex flex-col items-center gap-4 p-4 pb-0 w-full h-full">
     <!-- title -->
      <h1 class="text-left text-2xl font-bold w-full">Suas tarefas</h1>
 
@@ -19,17 +19,9 @@
       <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
       <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
       <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-      <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-      <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-      <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-      <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-      <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-      <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-      <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-      <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-      <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-      <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-      <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+      
+      <!-- bottom spacing -->
+      <div class="flex w-full h-1 pb-16"></div>
     </div>
     
     <!-- add -->
@@ -40,6 +32,8 @@
 </template>
 
 <script lang="ts" setup>
+  import Task from '~/components/VC/Task/Task.vue';
+
 </script>
 
 <style scoped>

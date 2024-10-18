@@ -2,6 +2,7 @@
   <div class="
     flex
     flew-row
+    justify-center
     items-center
     w-full 
     min-w-[360px]
@@ -28,13 +29,12 @@
     </div>
 
     <!-- delete item -->
-    <IconsDelete class="
+    <IconsMoreOptions class="
       text-black 
-        w-6 
-        h-6 
-        justify-self-end 
+        ml-auto 
+        w-4 
+        h-4 
         cursor-pointer
-        ml-auto
       "
     />
   </div>

@@ -1,6 +1,7 @@
 /* import */
 @import url('font.css');
 @import url('palette.css');
+@import url('scrollbar.css');
 
 * {
     overflow: hidden;
