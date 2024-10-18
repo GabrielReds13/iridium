@@ -1,0 +1,17 @@
+<template>
+  <div>
+    <svg width="" height="" viewBox="0 0 2 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 13C2 13.5523 1.55228 14 1 14C0.447715 14 0 13.5523 0 13C0 12.4477 0.447715 12 1 12C1.55228 12 2 12.4477 2 13Z" fill="currentColor"/>
+        <path d="M2 1C2 1.55228 1.55228 2 1 2C0.447715 2 0 1.55228 0 1C0 0.447715 0.447715 0 1 0C1.55228 0 2 0.447715 2 1Z" fill="currentColor"/>
+        <path d="M2 7C2 7.55228 1.55228 8 1 8C0.447715 8 0 7.55228 0 7C0 6.44772 0.447715 6 1 6C1.55228 6 2 6.44772 2 7Z" fill="currentColor"/>
+    </svg>
+  </div>
+</template>
+
+<script lang="ts" setup>
+
+</script>
+
+<style>
+
+</style>
