@@ -8,11 +8,14 @@
       </div>
 
       <!-- fields -->
-      <div class="w-full justify-center flex flex-col">
-        <TextField label="Email" type="text"/>
-        <TextField label="Senha" type="password"/>
+      <div class="w-full justify-center gap2 flex flex-col">
+        <!-- fields -->
+        <v-text-field label="Email" type="text" variant="outlined" color="#9E71FF" base-color="#6b7280" rounded="lg"></v-text-field>
+        <v-text-field label="Senha" type="password" variant="outlined" color="#9E71FF" base-color="#6b7280" rounded="lg"></v-text-field>
 
-        <p class="text-gray-500 text-sm text-center">Esqueceu a senha? <span class="text-[#9E71FF] cursor-pointer">Clique aqui</span>.</p>
+        <Button text="Entrar" />
+
+        <p class="text-gray-500 text-sm text-center mt-4">Esqueceu a senha? <span class="cursor-pointer" :class="`text-[{#9E71FF}]`">Clique aqui</span>.</p>
       </div>
       
     </div>
@@ -20,7 +23,7 @@
 </template>
 
 <script lang="ts" setup>
-import TextField from '~/components/VV/TextField.vue';
+import Button from '~/components/VV/Button.vue';
 
 
 </script>

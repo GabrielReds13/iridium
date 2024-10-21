@@ -20,6 +20,7 @@
 </template>
 
 <script lang="ts" setup>
+  // 
   import ProfilePhoto from '~/components/VC/ProfilePhoto/ProfilePhoto.vue';
 
 
