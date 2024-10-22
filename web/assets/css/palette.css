@@ -1,3 +1,10 @@
 :root {
     --purple-theme: #9E71FF;
+
+    /* shadow */
+    --shadow: #00000020;
+}
+
+.-box-shadow {
+    box-shadow: 0 0 8px 0 var(--shadow) !important;
 }
