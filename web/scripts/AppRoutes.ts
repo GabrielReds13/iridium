@@ -2,6 +2,10 @@ import type { Route } from "./types/Route";
 
 const routes: Route[] = [
     {
+        name: "Login",
+        address: "/"
+    },
+    {
         name: "Início",
         address: "/home"
     },

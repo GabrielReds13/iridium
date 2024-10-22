@@ -10,7 +10,7 @@
       </div>
 
       <!-- fields -->
-      <div class="w-full justify-center gap2 flex flex-col overflow-visible">
+      <div class="w-full justify-center gap2 flex flex-col -show-overflow">
         <!-- fields -->
         <v-text-field 
           label="Email" 
