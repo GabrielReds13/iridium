@@ -1,11 +1,23 @@
 import type { Route } from "./types/Route";
 
-export const loginRoute: Route = {
-    name: "Login",
-    address: "/"
-};
+// alter routes
+export const altRoutes: Route[] = [
+    {
+        name: "Login",
+        address: "/"
+    },
+    {
+        name: "Criar conta",
+        address: "/createAccount"
+    },
+    {
+        name: "Recuperar senha",
+        address: "/recoveryPassword"
+    },
+];
 
-const routes: Route[] = [
+// default routes
+const defaultRoutes: Route[] = [
     {
         name: "Início",
         address: "/home"
@@ -20,7 +32,29 @@ const routes: Route[] = [
     },
 ];
 
+// export routes
+export const getRoutes = async (
+    type: string, 
+    routeName?: string
+): Promise<Route[]> => {
+    // return
+    // all default routes
+    if(type === "default") return defaultRoutes;
 
-export const getRoutes = async (): Promise<Route[]> => {
-    return routes;
+    // all alter routes
+    else if (type === "alt") return altRoutes;
+
+    // specific route
+    else if (type === "request") {
+        // All routes
+        let allRoutes: Route[] = new Array();
+        allRoutes = allRoutes.concat(defaultRoutes, altRoutes);
+
+        // find request route
+        const findRoute = allRoutes.find(route => route.name === routeName);
+
+        // return
+        return [findRoute!];
+    }
+    else return [];
 };

@@ -52,7 +52,7 @@
   // menu
   const profileMenu = ref(null);
   // get routes
-  const allRoutes = ref<Route[]>(await getRoutes());
+  const allRoutes = ref<Route[]>(await getRoutes("default"));
 </script>
 
 <style scoped>
