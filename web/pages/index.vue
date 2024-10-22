@@ -33,8 +33,9 @@
 
         <p class="text-gray-500 text-sm text-center mt-4">Esqueceu a senha? <span class="cursor-pointer text-[#9E71FF]">Clique aqui</span>.</p>
       </div>
-      
     </div>
+
+    <p class="text-gray-500 text-sm text-center mt-auto mb-4">Não tem uma conta? <span class="cursor-pointer text-[#9E71FF]">Crie uma</span>.</p>
   </div>
 </template>
 

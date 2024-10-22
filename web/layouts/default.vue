@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col w-screen h-screen bg-white">
+  <div class="flex flex-col w-screen h-screen bg-white items-center">
     <!-- head page -->
     <header class="flex flex-row justify-between items-center px-4 w-full h-[50px] bg-[#9E71FF] z-999">
       <!-- logo -->
@@ -37,7 +37,7 @@
     </header>
 
     <!-- content -->
-    <div class="flex flex-col items-center w-full h-full overflow-x-hidden">
+    <div class="flex flex-col items-center w-full h-full overflow-x-hidden max-w-[480px]">
         <slot/>
     </div>
   </div>

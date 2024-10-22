@@ -10,7 +10,7 @@
       </div>
       
       <!-- tasks -->
-      <div class="flex flex-col w-full h-full gap-4 overflow-y-scroll">
+      <div class="flex flex-col w-full h-full gap-4 overflow-y-scroll pb-4">
         <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
         <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
         <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
@@ -24,9 +24,6 @@
         <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
         <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
         <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-        
-        <!-- bottom spacing -->
-        <div class="flex w-full h-1 pb-16"></div>
       </div>
       
       <!-- add -->
