@@ -26,7 +26,7 @@
           />
         </template>
 
-        <v-list class="-box-shadow">
+        <v-list class="-box-shadow-on">
           <v-list-item v-for="route in allRoutes" :to="route.address" color="#9E71FF" >
             <p>{{ route.name }}</p>
           </v-list-item>
@@ -37,7 +37,7 @@
     </header>
 
     <!-- content -->
-    <div class="flex flex-col items-center w-full h-full overflow-x-hidden max-w-[480px]">
+    <div class="flex flex-col items-center w-full h-full overflow-x-hidden">
         <slot/>
     </div>
   </div>
