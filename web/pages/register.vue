@@ -6,7 +6,7 @@
         <!-- modal -->
         <NuxtLayout name="modal" width="100%">
           <!-- logo -->
-          <h1 class="text-black font-bold text-4xl text-center">Criar conta</h1>
+          <h1 class="text-black font-bold text-4xl text-center h-max">Criar conta</h1>
         
           <!-- fields -->
           <FormsRegisterUser/>
