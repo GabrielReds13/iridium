@@ -28,14 +28,12 @@
       </p>
     </div>
 
-    <!-- delete item -->
-    <IconsMoreOptions class="
-      text-black 
-        ml-auto 
-        w-4 
-        h-4 
-        cursor-pointer
-      "
+    <!-- open item details -->
+    <VCTaskDetails
+      :id="props.id"
+      :name="props.name"
+      :description="props.description"
+      :checked="finishTask"
     />
   </div>
 </template>

@@ -6,7 +6,7 @@
         <!-- modal -->
         <NuxtLayout name="modal" width="100%">
           <!-- logo -->
-          <h1 class="text-black font-bold text-4xl text-center h-max">Criar conta</h1>
+          <h1 class="text-black font-bold text-3xl text-center h-max">Criar conta</h1>
         
           <!-- fields -->
           <FormsRegisterUser/>
@@ -17,8 +17,7 @@
             text-gray-500 
             text-sm 
             text-center 
-            mt-auto 
-            mb-4
+            mt-auto
         ">Já possui uma conta? <NuxtLink to="/" class="cursor-pointer text-[#9E71FF]">Fazer login</NuxtLink>.</p>
     </NuxtLayout>
 </template>
