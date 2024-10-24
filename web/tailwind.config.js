@@ -9,7 +9,9 @@ export default {
     "./error.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      "gradient-radial": "radial-gradient(--tw-gradient-stops)"
+    },
   },
   plugins: [],
 }
