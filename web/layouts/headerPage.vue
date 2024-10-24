@@ -18,9 +18,10 @@
               transition="slide-y-transition"
               class="-show-overflow"
             >
-              <template #activator="enable">
+              <template #activator="{enable, button}">
                 <ProfilePhoto 
                   class="w-8 h-8 rounded-full"
+                  v-bind="button"
                   v-on="enable"
                 />
               </template>
