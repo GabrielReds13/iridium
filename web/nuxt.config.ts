@@ -3,6 +3,16 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+  app: {
+    head: {
+      charset: "utf-8",
+      viewport: "width=device-width, initial-scale=1",
+      title: "Iridium",
+      htmlAttrs: {
+        lang: "pt-br"
+      }
+    }
+  },
   css: ["~/assets/css/main.css"],
   build: {
     transpile: ['vuetify'],

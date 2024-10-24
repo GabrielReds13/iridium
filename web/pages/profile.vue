@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col items-center gap-4 p-4 w-full h-full">
+  <NuxtLayout name="header-page">
     <!-- title -->
     <h1 class="text-left text-2xl font-bold w-full">Perfil</h1>
-
+    
     <!-- profile -->
     <div class="flex flex-row gap-4 w-full items-center">
         <!-- profile photo -->
@@ -27,9 +27,11 @@
     </div>
     
     <!-- progress -->
+    <h1 class="text-left text-2xl font-bold w-full">Tarefas</h1>
+
     <div class="grid grid-cols-2 gap-4 w-full items-center">
         <!-- cards -->
-        <ProgressCard :name="'Concluídos'" :items="[]"/>
+        <ProgressCard :name="'Concluídas'" :items="[]"/>
         <ProgressCard :name="'Em progresso'" :items="[]"/>
         <ProgressCard class="col-span-2" :name="'Total'" :items="[]"/>
     </div>
@@ -43,7 +45,7 @@
         <span class="text-gray-500 text-sm">Você concluiu 5 tarefas hoje.</span> <br>
       </p>
     </div>
-  </div>
+  </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
