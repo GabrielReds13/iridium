@@ -35,7 +35,7 @@
         ></v-text-field>
   
         <!-- submit form -->
-        <VCButton text="Criar conta" type="submit" :button-state="true"/>
+        <VCButton text="Criar conta" type="submit" :button-state="false"/>
     </v-form>
 </template>
 

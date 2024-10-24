@@ -1,6 +1,5 @@
 <template>
     <NuxtLayout name="header-page" title="Home">
-      <div class="flex flex-col items-center gap-4 p-4 pb-0 w-full h-full">
         <!-- title -->
          <h1 class="text-left text-2xl font-bold w-full">Suas tarefas</h1>
     
@@ -11,7 +10,7 @@
         </div>
         
         <!-- tasks -->
-        <div class="flex flex-col w-full h-full gap-4 overflow-y-scroll pb-4">
+        <div class="flex flex-col w-full h-full gap-4 overflow-y-scroll scroll-ml-2">
           <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="true"/>
           <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
           <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
@@ -31,7 +30,6 @@
         <div class="fixed bottom-4 right-4 z-10">
           <v-btn class="-box-shadow-off" :color="'#9E71FF'" icon="mdi-plus"/>
         </div>
-      </div> 
     </NuxtLayout>
   </template>
   
