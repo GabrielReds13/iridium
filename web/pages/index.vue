@@ -6,7 +6,7 @@
     <!-- modal -->
     <NuxtLayout name="modal" width="100%">
       <!-- logo -->
-      <div class="flex flex-row gap-1 items-center w-full justify-center">
+      <div class="flex flex-row gap-1 items-center w-full h-max justify-center">
         <IconsLogoIridium class="w-9 h-9"/>
         <h1 class="text-black font-bold text-4xl">IRIDIUM</h1>
       </div>
