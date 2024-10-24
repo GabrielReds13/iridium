@@ -10,7 +10,7 @@
       
             <!-- profile button -->
             <v-menu
-              v-model="profileMenu!"
+              v-model="profileMenu"
               activator="parent"
               location="right"
               :max-width="200"
