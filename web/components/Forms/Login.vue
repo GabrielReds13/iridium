@@ -19,7 +19,7 @@
         ></v-text-field>
   
         <!-- submit form -->
-        <VCButton text="Entrar" type="submit" />
+        <VCButton text="Entrar" type="submit" :button-state="true"/>
     </v-form>
 </template>
 

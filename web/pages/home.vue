@@ -12,37 +12,32 @@
         
         <!-- tasks -->
         <div class="flex flex-col w-full h-full gap-4 overflow-y-scroll pb-4">
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
-          <Task :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="true"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
+          <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
         </div>
         
         <!-- add -->
         <div class="fixed bottom-4 right-4 z-10">
-          <v-btn class="-add-btn" :color="'#9E71FF'" icon="mdi-plus"/>
+          <v-btn class="-box-shadow-off" :color="'#9E71FF'" icon="mdi-plus"/>
         </div>
       </div> 
     </NuxtLayout>
   </template>
   
   <script lang="ts" setup>
-    // import
-    import Task from '~/components/VC/Task/Task.vue';
   
   </script>
   
   <style scoped>
-    .-add-btn, .-add-btn:hover {
-      box-shadow: none;
-    }
   </style>

@@ -7,8 +7,8 @@
     <NuxtLayout name="modal" width="100%">
       <!-- logo -->
       <div class="flex flex-row gap-1 items-center w-full h-max justify-center">
-        <IconsLogoIridium class="w-9 h-9"/>
-        <h1 class="text-black font-bold text-4xl">IRIDIUM</h1>
+        <IconsLogoIridium class="w-6 h-6"/>
+        <h1 class="text-black font-bold text-3xl">IRIDIUM</h1>
       </div>
   
       <!-- fields -->
@@ -23,7 +23,6 @@
       text-sm 
       text-center 
       mt-auto 
-      mb-4
     ">Não tem uma conta? <NuxtLink to="/register" class="cursor-pointer text-[#9E71FF]">Crie uma</NuxtLink>.</p>
   </NuxtLayout>
 </template>
