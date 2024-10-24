@@ -8,11 +8,7 @@ export const altRoutes: Route[] = [
     },
     {
         name: "Criar conta",
-        address: "/createAccount"
-    },
-    {
-        name: "Recuperar senha",
-        address: "/recoveryPassword"
+        address: "/register"
     },
 ];
 

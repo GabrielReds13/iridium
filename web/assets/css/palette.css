@@ -5,6 +5,10 @@
     --shadow: #00000020;
 }
 
-.-box-shadow {
+.-box-shadow-on {
     box-shadow: 0 0 8px 0 var(--shadow) !important;
+}
+
+.-box-shadow-off {
+    box-shadow: none !important;
 }
