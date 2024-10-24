@@ -19,8 +19,8 @@ const defaultRoutes: Route[] = [
         address: "/home"
     },
     {
-        name: "Perfil",
-        address: "/profile"
+        name: "Progresso",
+        address: "/progress"
     },
     {
         name: "Configurações",

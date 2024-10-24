@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout name="guest">
     <!-- illustration -->
-    <WelcomeLogin class="text-[#9E71FF30] w-[75%] max-w-[380px]" />
+    <IllustrationsWelcomeLogin class="text-[#9E71FF30] w-[75%] max-w-[380px]" />
 
     <!-- modal -->
     <NuxtLayout name="modal" width="100%">
@@ -18,13 +18,17 @@
     </NuxtLayout>
     
     <!-- new account -->
-    <p class="text-gray-500 text-sm text-center mt-auto mb-4">Não tem uma conta? <span class="cursor-pointer text-[#9E71FF]">Crie uma</span>.</p>
+    <p class="
+      text-gray-500 
+      text-sm 
+      text-center 
+      mt-auto 
+      mb-4
+    ">Não tem uma conta? <NuxtLink to="/register" class="cursor-pointer text-[#9E71FF]">Crie uma</NuxtLink>.</p>
   </NuxtLayout>
 </template>
 
 <script lang="ts" setup>
-  // import
-  import WelcomeLogin from '~/components/Illustrations/WelcomeLogin.vue';
 </script>
 
 <style scoped\>

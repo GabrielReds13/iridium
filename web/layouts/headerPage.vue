@@ -19,8 +19,8 @@
               class="-show-overflow"
             >
               <template #activator="{enable, button}">
-                <ProfilePhoto 
-                  class="w-8 h-8 rounded-full"
+                <IconsHamburguer
+                  class="w-6 h-6 cursor-pointer"
                   v-bind="button"
                   v-on="enable"
                 />
@@ -44,7 +44,6 @@
 <script lang="ts" setup>
     // import
     import type { Route } from '~/scripts/types/Route';
-    import ProfilePhoto from '~/components/VC/ProfilePhoto/ProfilePhoto.vue';
     import { getRoutes } from '~/scripts/AppRoutes';
 
     // menu
