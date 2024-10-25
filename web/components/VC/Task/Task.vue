@@ -5,7 +5,8 @@
     justify-center
     items-center
     w-full 
-    min-w-[360px]
+    h-max
+    min-w-[320px]
     min-h-[80px] 
     gap-2 
     p-4

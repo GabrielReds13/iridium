@@ -10,3 +10,7 @@
 .-show-overflow, .-show-overflow * {
     overflow: visible !important;
 }
+
+.v-dialog {
+    max-width: 600px !important;
+}

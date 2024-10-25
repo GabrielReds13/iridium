@@ -12,6 +12,8 @@
     .v-card {
         display: flex !important;
         flex-direction: column !important;
+
+        max-width: 600px !important;
         
         padding: 1.5rem !important;
         gap: 2rem !important;
