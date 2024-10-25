@@ -1,5 +1,5 @@
 <template>
-  <v-dialog>
+  <v-dialog class="-v-dialog">
     <!-- button -->
     <template #activator="{ props: activator }">
         <IconsMoreOptions 
@@ -48,6 +48,5 @@
   });
 </script>
 
-<style>
-
+<style scoped>
 </style>
