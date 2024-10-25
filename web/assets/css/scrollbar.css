@@ -1,10 +1,16 @@
+@import url('palette.css');
+
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 6px;
   }
 ::-webkit-scrollbar-track {
-  background: #00532b15;
+  background: var(--gray-1);
 }
 ::-webkit-scrollbar-thumb {
-  background: #9E71FF;
+  background: var(--purple-theme);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
   border-radius: 50px;
 }
