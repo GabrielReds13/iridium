@@ -1,5 +1,5 @@
 <template>
-    <v-dialog class="-v-dialog">
+    <v-dialog>
       <!-- button -->
       <template #activator="{ props: activator }">
         <VCButton text="Criar tarefa" :button-state="false" icon="mdi-plus" v-bind="activator" />
