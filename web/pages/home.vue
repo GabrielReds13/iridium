@@ -10,7 +10,7 @@
         </div>
         
         <!-- tasks -->
-        <div class="flex flex-col w-full h-full gap-4 overflow-scroll scroll-pt-4 pr-2">
+        <div class="flex flex-col w-full h-full gap-4 overflow-hidden overflow-y-auto pr-2">
           <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="true"/>
           <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
           <VCTask :name="'Lorem ipsum'" :description="'Lorem ipsum dolor sit amet.'" :checked="false"/>
