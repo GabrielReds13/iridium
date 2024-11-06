@@ -15,7 +15,7 @@
                 <h1 class="font-bold text-xl">Criar tarefa</h1>
       
                 <!-- options -->
-                <v-btn variant="plain"icon="mdi-window-close" @click="isActive.value = false"/>
+                <v-btn variant="plain" icon="mdi-window-close" @click="isActive.value = false"/>
               </div>
 
               <!-- Form -->
