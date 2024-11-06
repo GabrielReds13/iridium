@@ -19,12 +19,14 @@
         ></v-text-field>
   
         <!-- submit form -->
-        <VCButton text="Criar tarefa" type="submit" :button-state="false"/>
+        <VCButton :text="props.submitText ? props.submitText : 'Criar tarefa'" type="submit" :button-state="false"/>
     </v-form>
 </template>
 
 <script lang="ts" setup>
-
+  const props = defineProps({
+    submitText: String
+  });
 </script>
 
 <style>
