@@ -3,15 +3,37 @@
 
 // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
-
-
 datasource db {
-  provider = "mongodb"
-  url      = env("DATABASE_URL")
+  provider      =         "mongodb"
+  url           =         env("DATABASE_URL")
 }
 
 generator client {
-  provider = "prisma-client-js"
+  provider      =         "prisma-client-js"
 }
 
+model User {
+  id            String    @id @default(auto()) @map("_id") @db.ObjectId
+  name          String
+  email         String 
+  password      Password  @relation(fields: [passwordId], references: [id])
+  passwordId    String    @db.ObjectId
+}
 
+model Password {
+  id            String    @id @default(auto()) @map("_id") @db.ObjectId
+  keyword       String    @unique
+  invalidation  Boolean
+  user          User      @relation(fields: [userId], references: [id])
+  userId        String    @db.ObjectId
+}
+
+model Task {
+  id            String    @id @default(auto()) @map("_id") @db.ObjectId
+  title         String
+  description   String?
+  finished      Boolean
+  finishedDate  DateTime
+  user          User      @relation(fields: [userId], references: [id])
+  userId        String    @db.ObjectId
+}
